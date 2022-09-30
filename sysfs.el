@@ -101,4 +101,6 @@ If nil on first access, it is set to the first device found alphabetically.")
   (interactive "p")
   (sysfs-brightness-up (- multiplier)))
 
+(provide 'sysfs)
+
 ;;; sysfs.el ends here
