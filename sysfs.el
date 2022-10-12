@@ -39,8 +39,8 @@
 ;;;###autoload
 (defun sysfs-sleep ()
   (interactive)
-  (write-region "mem" nil "/sys/power/state" nil :no-message)
-  (message "Going to sleep..."))
+  (message "Going to sleep...")
+  (write-region "mem" nil "/sys/power/state" nil :no-message))
 
 (defcustom sysfs-backlight nil
   "Device under /sys/class/backlight/ to use for brightness control.
